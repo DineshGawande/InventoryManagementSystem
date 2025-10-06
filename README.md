@@ -2,6 +2,19 @@
 
 A RESTful API for managing product inventory with stock tracking, low-stock alerts, and comprehensive CRUD operations.
 
+---
+
+## 📝 1. Brief Description of the Project
+
+The **Inventory Management System API** is a backend solution built using **Spring Boot** and **Spring Data JPA** for managing product inventory. It enables users to:
+- Add, update, and delete products
+- Manage stock levels with proper validation
+- Get alerts for low-stock products
+- View and manage data through REST APIs and Swagger UI
+- Store data in H2 (for development) or MySQL (for production)
+
+This system helps businesses maintain optimal inventory levels and prevent stockouts.
+
 ## 📋 Table of Contents
 
 - [Features](#features)
@@ -505,26 +518,7 @@ springdoc.api-docs.path=/api-docs
 springdoc.swagger-ui.path=/swagger-ui.html
 ```
 
-### MySQL Configuration
 
-Create `application-mysql.properties`:
-
-```properties
-# MySQL Database
-spring.datasource.url=jdbc:mysql://localhost:3306/inventory_db?useSSL=false&serverTimezone=UTC
-spring.datasource.username=inventory_user
-spring.datasource.password=your_password
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-
-# JPA/Hibernate
-spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=false
-```
-
-Activate MySQL profile:
-```bash
-mvn spring-boot:run -Dspring-boot.run.profiles=mysql
 ```
 
 ## 📁 Project Structure
@@ -665,9 +659,9 @@ This project is licensed under the MIT License.
 
 ## 👥 Contact
 
-- **Author**: Your Name
-- **Email**: your.email@example.com
-- **GitHub**: [@yourusername](https://github.com/yourusername)
+- **Author**: Dinesh Rajesh Gawande
+- **Email**: dineshgawanden@gmail.com
+- **GitHub**: [@yourusername](https://github.com/DineshGawnade)
 
 ## 🙏 Acknowledgments
 
@@ -675,8 +669,6 @@ This project is licensed under the MIT License.
 - Open source community
 - All contributors
 
----
 
-**Happy Coding! 🚀**
 
 
