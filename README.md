@@ -79,34 +79,6 @@ This will:
 - Run tests
 - Create executable JAR file
 
-### Step 3: Configure Database (Optional)
-
-**For H2 (Default - No configuration needed)**
-
-The application uses H2 in-memory database by default. Data will be lost on restart.
-
-**For MySQL (Production)**
-
-1. Create a MySQL database:
-```sql
-CREATE DATABASE inventory_db;
-CREATE USER 'inventory_user'@'localhost' IDENTIFIED BY 'your_password';
-GRANT ALL PRIVILEGES ON inventory_db.* TO 'inventory_user'@'localhost';
-FLUSH PRIVILEGES;
-```
-
-2. Update `src/main/resources/application.properties`:
-```properties
-spring.profiles.active=mysql
-```
-
-3. Configure MySQL connection in `application-mysql.properties`:
-```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/inventory_db
-spring.datasource.username=inventory_user
-spring.datasource.password=your_password
-```
-
 ## 🏃 Running the Application
 
 ### Method 1: Using Maven
@@ -716,3 +688,4 @@ This project is licensed under the MIT License.
 ---
 
 **Happy Coding! 🚀**
+
