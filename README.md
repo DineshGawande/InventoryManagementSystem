@@ -34,7 +34,6 @@ A RESTful API for managing product inventory with stock tracking, low-stock aler
 - **Spring Data JPA** - Database operations
 - **Hibernate** - ORM framework
 - **H2 Database** - In-memory database for development
-- **MySQL** - Production database (optional)
 - **Lombok** - Reduces boilerplate code
 - **MapStruct** - DTO mapping
 - **Swagger/OpenAPI** - API documentation
@@ -63,8 +62,8 @@ mvn -version     # Should show Maven 3.8 or higher
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/inventory-management-system.git
-cd inventory-management-system
+git clone https://github.com/DineshGawande/InventoryManagementSystem.git
+cd InventoryManagementSystem
 ```
 
 ### Step 2: Build the Project
@@ -87,17 +86,8 @@ This will:
 mvn spring-boot:run
 ```
 
-### Method 2: Using JAR File
 
-```bash
-# First build the JAR
-mvn clean package -DskipTests
-
-# Then run it
-java -jar target/inventory-management-system-1.0.0.jar
-```
-
-### Method 3: Using IDE
+### Method 2: Using IDE
 
 1. Import project as Maven project
 2. Run `InventoryManagementApplication.java` as Java Application
@@ -688,4 +678,5 @@ This project is licensed under the MIT License.
 ---
 
 **Happy Coding! 🚀**
+
 
